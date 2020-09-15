@@ -11,7 +11,7 @@ module NetBusAsynFIFOMem #(
 	output [RAM_WIDTH-1:0]  DOUT  
 );
 
-reg [RAM_WIDTH-1:0] BRAM [1<<RAM_DEPTH-1:0];
+reg [RAM_WIDTH-1:0] BRAM [(1<<RAM_DEPTH)-1:0];
 reg [RAM_WIDTH-1:0] out_reg;
 
 always @(posedge CLKW)begin
